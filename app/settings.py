@@ -30,7 +30,7 @@ SECRET_KEY = env.str("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool("DEBUG")
 
-ALLOWED_HOSTS = env.list("ALLOWED_HOSTS")
+ALLOWED_HOSTS = env.list("DJANGOAPP_SERVICE_HOST")
 
 
 # Application definition
@@ -88,8 +88,8 @@ DATABASES = {
         "NAME": env.str("DB_NAME"),
         "USER": env.str("DB_USER"),
         "PASSWORD": env.str("DB_PASSWORD"),
-        "HOST": env.str("DB_HOST"),
-        "PORT": env.str("DB_PORT"),
+        "HOST": env.str("POSTGRESQL_PORT_5432_TCP_ADDR"),
+        "PORT": env.str("POSTGRESQL_SERVICE_PORT_POSTGRESQL"),
     }
 }
 
