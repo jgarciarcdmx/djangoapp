@@ -88,8 +88,8 @@ DATABASES = {
         "NAME": env.str("DB_NAME"),
         "USER": env.str("DB_USER"),
         "PASSWORD": env.str("DB_PASSWORD"),
-        "HOST": env.str("POSTGRESQL_PORT_5432_TCP_ADDR"),
-        "PORT": env.str("POSTGRESQL_SERVICE_PORT_POSTGRESQL"),
+        "HOST": env.str("POSTGRESQL_SERVICE_HOST"),
+        "PORT": env.str("POSTGRESQL_SERVICE_PORT"),
     }
 }
 
