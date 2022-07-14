@@ -30,7 +30,7 @@ SECRET_KEY = env.str("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool("DEBUG")
 
-ALLOWED_HOSTS = env.list("DJANGOAPP-UPLOAD_SERVICE_HOST")
+ALLOWED_HOSTS = env.list("DJANGOAPP_UPLOAD_SERVICE_HOST")
 
 
 # Application definition
